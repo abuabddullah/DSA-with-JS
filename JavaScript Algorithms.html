@@ -30,6 +30,7 @@
             max-width: 100vw;
             word-wrap: break-word;
             overflow: auto;
+            margin-bottom: 0;
         }
 
         .alert {
@@ -146,6 +147,35 @@
             <h2>JavaScript Algorithms - 4 - Big-O Notation</h2>
             <ul>
                 <li>
+                    <h3>What is Big-O Notation?</h3>
+                    <code>the worst case complexity of an algorithm is represented using the Big-O Notation which describes the complexity of an algorithm using algebraic terms.</code>
+
+                    <pre>The Big-O Notation has two important characteristics</pre>
+                    <ol>
+                        <li>It is expressed in terms of the input and </li>
+                        <li>It focuses on the bigger picture without getting caught up in the minute new details</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>Big-O Notation for Time and Space complexity?</h3>
+                    <pre>There are different terms of measuring Big-O Notation for Time and Space complexity,</pre>
+                    <ul>
+                        <li> <code>O(n)</code> - Linear
+                        </li>
+                        <li> <code>O(1)</code> - Constant
+                        </li>
+                        <li> <code>O(n2)</code> - Quadratic (3n2+5n+1 ..)
+                        </li>
+                        <li> <code>O(n3)</code> - Cubic
+                        </li>
+                        <li> <code>O(log n)</code> - Logarithmic (input size reduces by half after each iteration)</li>
+                    </ul>
+                    <code class="alert">
+                        [N.B: O(n) and O(log n) is most efficient and  O(n!) is the least. Here n is the no of repetitions of a specific line of code to get the output of a function.]
+                    </code>
+                    <img src="./resources/Big-O Notation complexity chart.png" alt="">
+                </li>
+                <li>
                     <h3>Explanation Big-O Notation Terms</h3>
                     <img src="./resources/Big-O Notation Terms.png" alt="">
 
@@ -168,8 +198,27 @@
     so the total count is <b> n </b> plus 2. But as far as we know <b>algorithm</b> focuses on the bigger picture without getting caught up in the minute new details due to this the <b>O(n)-Notation</b> is used to describe the performance of an algorithm.
 </pre>
                 </li>
+
+                <li>
+                    <h3>Special Note:</h3>
+                    <ol>
+                        <li>Multiple algorithms exist for the same problem and there is no one right solution different
+                            algorithms work well under different constraints
+                        </li>
+                        <li>The same algorithm with the same programming language can be implemented in different ways
+                            (for JS we can code the same but in a different manner by ES6 / ES5 / vanilla style)
+                        </li>
+                        <li>when writing programs at work don't lose sight of the big picture rather than writing clever
+                            code write code that is simple to read and maintain
+                        </li>
+                    </ol>
+                </li>
             </ul>
         </li>
+
+
+
+
     </ul>
 
 </body>
