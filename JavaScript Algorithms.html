@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        h3 {
+            color: rgb(76, 154, 255);
+        }
+
+        code {
+            color: rgb(97, 211, 45);
+            width: 100vmax;
+        }
+
+        pre {
+            max-width: 100vw;
+            word-wrap: break-word;
+            overflow: auto;
+        }
+
+        .alert {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+    <title>JavaScript Algorithms_Codevolution</title>
+</head>
+
+<body>
+    <h1>JavaScript Algorithms_Codevolution</h1>
+
+
+
+
+
+    <ul>
+        <li>
+            <h2>JavaScript Algorithms - 2 - What is an Algorithm?</h2>
+            <ul>
+                <li>
+                    <h3>What is an algorithm?</h3>
+                    <code>
+                        an algorithm is a set of well-defined instructions to solve a particular problem
+                    </code>
+                    <br> <br> <br>
+                    <img src="./resources/What is algo1.png" alt="">
+                    <br> <br> <br>
+                    <img src="./resources/What is algo2.png" alt="">
+
+                </li>
+                <li>
+
+                    <h3>Characteristics of an algorithm</h3>
+                    <ol>
+                        <li>
+                            <code>algorithm should have defined inputs and outputs</code> (in our example we have two
+                            numbers as
+                            inputs and their sum as the output )
+                        </li>
+                        <li>
+                            <code>each step in an algorithm should be clear and unambiguous</code> ( in our example we
+                            have two steps
+                            add the numbers using the plus operator and return the sum )
+                        </li>
+                        <li>
+                            <code>an algorithm should be language independent</code> i.e it should be written in such a
+                            way that it
+                            can be used with different programming languages
+                        </li>
+                    </ol>
+                    <code class="alert">
+                        [N.B: although i had mentioned we would be using javascript to write our code the algorithm itself is by no means related to javascript ]
+                    </code>
+                </li>
+            </ul>
+        </li>
+
+
+
+        <li>
+            <h2>JavaScript Algorithms - 3 - Time and Space Complexity</h2>
+            <pre>
+    The measure of an algorithm depends on a number of factors,
+        -it can change based on the programming language used to implement the algorithm
+        -the computer program runs on 
+        -the other programs running at the same time
+        -the quality of the operating system and many other factors
+
+    So that's why we evaluate(measure) the performance of an algorithm in terms of its 
+        <code>Time complexity</code>: which is the amount of time taken by an algorithm to run as a function of input size
+        <code>Space complexity</code>: which is the amount of memory taken by an algorithm to run as function a of input size
+
+</pre>
+
+            <ul>
+                <li>
+                    <h3>When and How to consider the complexity?</h3>
+                    <pre>
+    one algorithm can be faster for a small input size but slower for a larger input size.
+    if your app needs to be very quick and has plenty of memory to work with you should think about time complexity and don't have to worry about space complexity
+    on the other hand if you have little memory to work with you should think about space complexity and don't have to worry about time complexity
+    
+    </pre>
+                </li>
+                <li>
+                    <h3>How do we represent the time and space complexity?</h3>
+                    <pre>
+    we represent the time and space complexity using asymptotic notations (asymptotic notations are mathematical tools to represent time and space complexity)
+    there are mainly three asymptotic notations
+    
+</pre>
+                    <ol>
+                        <li>
+                            <code>Big-O notation</code> <span class="alert">(O notation)</span> for worst-case
+                            complexity
+                        </li>
+                        <li>
+                            <code>Omega notation</code> for best case complexity
+
+                        </li>
+                        <li>
+                            <code>Theta notation</code> for average case complexity
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+
+
+
+        <li>
+            <h2>JavaScript Algorithms - 4 - Big-O Notation</h2>
+            <ul>
+                <li>
+                    <h3>Explanation Big-O Notation Terms</h3>
+                    <img src="./resources/Big-O Notation Terms.png" alt="">
+
+                    <script>
+                        // Q: function for calculating the sum of all numbers from 1 to n
+                        function summation(n) {
+                            let sum = 0;
+                            for (let i = 0; i <= n; i++) {
+                                sum += i;
+                            }
+                            return sum;
+                        }
+                        console.log(summation(4));
+                    </script>
+                    <pre>
+    let's calculate the number of times each statement is executed, 
+        -line two executes only once
+        -line four however executes <b> n </b> times 
+        -line 6 again is executed just once 
+    so the total count is <b> n </b> plus 2. But as far as we know <b>algorithm</b> focuses on the bigger picture without getting caught up in the minute new details due to this the <b>O(n)-Notation</b> is used to describe the performance of an algorithm.
+</pre>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>
