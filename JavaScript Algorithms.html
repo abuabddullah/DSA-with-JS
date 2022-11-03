@@ -218,6 +218,71 @@
 
 
 
+        <li>
+            <h2>JavaScript Algorithms - 5 - Objects and Arrays Big-O</h2>
+            <ul>
+                <li>
+                    <h3>Big-O Notation for JS Object</h3>
+                    <img src="https://i.ibb.co/Myz4Txm/Big-O-in-js-obj.png" alt="">
+                    <pre>
+    Insert,Remove,Access has constant <b>O(1)</b> cause they are specific to the target but
+    
+    Rests mentioned are linear <b>O(n)</b> cause they depends on the no of element in the object
+                </pre>
+                    <script>
+                        const person = {
+                            firstName: "Bruce",
+                            lastName: "Wayne"
+                        }
+
+
+                        // insert
+                        person.nickName = "Bat Man"
+                        person.testRemove = "True"
+
+
+                        // remove
+                        // delete person["testRemove"]
+                        delete person.testRemove
+
+
+                        // access 
+                        // console.log(person.lastName)
+                        console.log(person["lastName"])
+
+
+                        // search
+                        for (eachKey in person) {
+                            if (person[eachKey].toLowerCase().includes("b")) {
+                                console.log(true)
+                            }
+                        }
+
+
+                        // Object.keys/values/entries            
+                        console.log(Object.keys(person))
+                        console.log(Object.values(person))
+                        console.log(Object.entries(person))
+
+
+                    </script>
+                </li>
+                <li>
+                    <h3>Big-O Notation for JS Array</h3>
+                    <br>
+                    <img src="https://i.ibb.co/JQ1s93G/Big-O-in-js-array.png" alt="">
+                    <pre>
+    Insert,Remove,Access has constant <b>O(1)</b> cause they are specific to the target but
+    Push, Pop has constant <b>O(1)</b> cause the changes at the end of an array element which doesn't change the <b>Index no</b> of all element
+    
+    Rests mentioned are linear <b>O(n)</b> cause they depends on the no of element in the object and in some cases the <b>Index no</b> is changed for all element like <span class="alert">adding any new item at the start of an array</span>
+                </pre>
+                    <script>
+                // No need 
+                    </script>
+                </li>
+            </ul>
+        </li>
 
     </ul>
 
