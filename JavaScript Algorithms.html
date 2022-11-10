@@ -22,7 +22,7 @@
         }
 
         code {
-            color: rgb(97, 211, 45);
+            color: rgb(71, 189, 16);
             width: 100vmax;
         }
 
@@ -58,9 +58,11 @@
                         an algorithm is a set of well-defined instructions to solve a particular problem
                     </code>
 
-                    <img src="./resources/What is algo1.png" alt="">
+                    <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668104298/JavaScript%20Algorithms_Codevolution/What_is_algo1_u6wd64.png"
+                        alt="">
 
-                    <img src="./resources/What is algo2.png" alt="">
+                    <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668104298/JavaScript%20Algorithms_Codevolution/What_is_algo2_ufdtns.png"
+                        alt="">
 
                 </li>
                 <li>
@@ -173,13 +175,21 @@
                     <code class="alert">
                         [N.B: O(n) and O(log n) is most efficient and  O(n!) is the least. Here n is the no of repetitions of a specific line of code to get the output of a function.]
                     </code>
-                    <img src="./resources/Big-O Notation complexity chart.png" alt="">
+                    <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668104299/JavaScript%20Algorithms_Codevolution/Big-O_Notation_complexity_chart_epop8r.png"
+                        alt="">
                 </li>
                 <li>
                     <h3>Explanation Big-O Notation Terms ⇊ </h3>
-                    <img src="./resources/Big-O Notation Terms.png" alt="">
+                    <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668104298/JavaScript%20Algorithms_Codevolution/Big-O_Notation_Terms_zri2ga.png"
+                        alt="">
 
-                    <script>
+                    <mark><b><i>[watch code in VS Code]</i> </b></mark>
+                    <details>
+                        <summary>Code Reveal</summary>
+                        <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668107559/JavaScript%20Algorithms_Codevolution/sumFunc_fkmprj.png"
+                            alt="">
+                    </details>
+                    <!-- <script>
                         // Q: function for calculating the sum of all numbers from 1 to n
                         function summation(n) {
                             let sum = 0;
@@ -189,7 +199,7 @@
                             return sum;
                         }
                         console.log(summation(4));
-                    </script>
+                    </script> -->
                     <pre>
     let's calculate the number of times each statement is executed, 
         -line two executes only once
@@ -229,7 +239,13 @@
     
     Rests mentioned are linear <b>O(n)</b> cause they depends on the no of element in the object
                 </pre>
-                    <script>
+                    <mark><b><i>[watch code in VS Code]</i> </b></mark>
+                    <details>
+                        <summary>Code Reveal</summary>
+                        <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668107676/JavaScript%20Algorithms_Codevolution/bigO_On_OBJ_lvq8d1.png"
+                            alt="">
+                    </details>
+                    <!-- <script>
                         const person = {
                             firstName: "Bruce",
                             lastName: "Wayne"
@@ -265,7 +281,7 @@
                         console.log(Object.entries(person))
 
 
-                    </script>
+                    </script> -->
                 </li>
                 <li>
                     <h3>Big-O Notation for JS Array ⇊ </h3>
@@ -277,12 +293,328 @@
     
     Rests mentioned are linear <b>O(n)</b> cause they depends on the no of element in the object and in some cases the <b>Index no</b> is changed for all element like <span class="alert">adding any new item at the start of an array</span>
                 </pre>
-                    <script>
+                    <!-- <script>
                 // No need 
-                    </script>
+                    </script> -->
                 </li>
             </ul>
         </li>
+
+
+        <li>
+            <h2>JavaScript Algorithms - 6 - Math Algorithms</h2>
+            <ul>
+                <li>
+                    <h3>Problem Overview ⇊ </h3>
+                    <img src="./resources/DSA.png" height="300px" alt="">
+                    <img src="./resources/DSA1.png" height="300px" alt="">
+                </li>
+            </ul>
+        </li>
+
+
+
+        <li>
+            <h2>JavaScript Algorithms - 7 - Fibonacci Sequence</h2>
+            <pre>
+in mathematics the fibonacci sequence is a sequence in which each number is the sum of the two preceding ones the first two numbers in the sequence are <b>0 and 1</b>.
+            </pre>
+            <ul>
+                <li>
+                    <h3>Problem ⇊ </h3>
+                    <code>
+                        given a number <b>"n"</b> find the first <b>"n"</b> elements of the fibonacci sequence
+                    </code>
+                    <br><br><mark><b><i>[watch code in VS Code]</i> </b></mark>
+                    <details>
+                        <summary>Code Reveal</summary>
+                        <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668107320/JavaScript%20Algorithms_Codevolution/fibonacci_tkyjwj.png"
+                            alt="">
+                    </details>
+                    <!-- <script>
+                        function fibonacci(n) {
+                            let fib = [0, 1]
+                            for (let i = 2; i < n; i++) {
+                                fib[i] = fib[i - 1] + fib[i - 2]
+                            }
+                            return fib
+                        }
+                        console.log("fibonacci of 3", fibonacci(3));
+                        console.log("fibonacci of 7", fibonacci(7));
+                        console.log("fibonacci of 10", fibonacci(10));
+                    </script> -->
+
+
+                </li>
+
+
+                <li>
+                    <h3>Big-O Determination ShortCut Cheatsheet formula</h3>
+                    <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668106925/JavaScript%20Algorithms_Codevolution/bigO_determination_formula_toazhj.png"
+                        alt="">
+                </li>
+
+                <li>
+                    <h3>Time Complixity of our Code:</h3>
+                    <pre>
+    from our cheat sheet it is pretty evident that big o is <b>linear time complexity</b>. so big o is equal to <strong>O(n)</strong>. <b>Cause as the valueof n increases the number of times line 4 executes also increases</b>
+    <h4>Big O = O(n)</h4>
+                    </pre>
+                </li>
+            </ul>
+        </li>
+
+
+
+        <li>
+            <h2>JavaScript Algorithms - 8 - Factorial of a Number</h2>
+            <pre>
+    in mathematics the factorial of a non-negative integer <b>"n"</b> denoted <b>"n!"</b> is the product of all positive integers less than or equal to <b>"n"</b>
+            </pre>
+            <ul>
+                <li>
+                    <h3>Problem ⇊</h3>
+                    <code>
+                        given an integer <b>"n"</b> find the factorial of that integer 
+                    </code>
+                    <br><br><mark><b><i>[watch code in VS Code]</i> </b></mark>
+                    <details>
+                        <summary>Code Reveal</summary>
+                        <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668109529/JavaScript%20Algorithms_Codevolution/factorial_boih5b.png"
+                            alt="">
+                    </details>
+                    <!-- <script>
+                        function factorial(n) {
+                            let result = 1
+                            for (let i = 1; i <= n; i++) {
+                                result *= i;
+                            }
+                            return result
+                        }
+
+                        console.log("factorial of 4", factorial(4));
+                        console.log("factorial of 5", factorial(5));
+                    </script> -->
+                </li>
+
+                <li>
+                    <h3>Time Complixity of our Code:[<b>follow CheatSheet of <i>tuto7</i></b>]</h3>
+                    <pre>
+    from our cheat sheet it is pretty evident that big o is <b>linear time complexity</b>. so big o is equal to <strong>O(n)</strong>. <b>Cause as the valueof n increases the number of times line 4 executes also increases</b>
+                        <h4>Big O = O(n)</h4>
+</pre>
+                </li>
+            </ul>
+        </li>
+
+
+
+        <li>
+            <h2>JavaScript Algorithms - 9 - Prime Number</h2>
+            <pre>
+    Prime Number is a natural number greater than 1 that is not a product of two smaller natural numbers
+            </pre>
+            <ul>
+                <li>
+                    <h3>Problem ⇊ </h3>
+                    <code>
+    given a natural number <b>"n"</b> determine if the number is prime or not
+                    </code>
+                    <br><br><mark><b><i>[watch code in VS Code]</i> </b></mark>
+                    <details>
+                        <summary>Code Reveal solve 1</summary>
+                        <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668115502/JavaScript%20Algorithms_Codevolution/primeNumber_rh1cb8.png"
+                            alt="">
+                    </details>
+
+                    <!-- <script>
+                        // solve 1
+                        function isPrime(n) {
+                            if (n < 2) {
+                                return false
+                            }
+                            for (let i = 2; i < n; i++) {
+                                if (n % i === 0) {
+                                    return false
+                                }
+                            }
+                            return true
+                        }
+
+                        console.log("isPrime 1?", isPrime(1));
+                        console.log("isPrime 5?", isPrime(5));
+                        console.log("isPrime 4?", isPrime(4));
+                    </script> -->
+                </li>
+                <li>
+                    <h3>Time Complixity of our Code[of <b>solve-1</b>]</h3>
+                    <pre>
+    that Big o is <b>linear time complexity</b> so big o is equal to <b>O(n)</b> 
+    as the value of n increases the number of times line six executes also increases
+</pre>
+                </li>
+
+                <br><mark><b><i>[watch code in VS Code]</i> </b></mark>
+                <details>
+                    <summary>Code Reveal solve 2</summary>
+                    <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668115503/JavaScript%20Algorithms_Codevolution/primeNumber2_mknjyq.png"
+                        alt="">
+                </details>
+                <!-- <script>
+                    // solve 2
+                    function isPrimeOptimized(n) {
+                        if (n < 2) {
+                            return false
+                        }
+                        for (let i = 2; i <= Math.sqrt(n); i++) {
+                            if (n % i === 0) {
+                                return false
+                            }
+                        }
+                        return true
+                    }
+
+                    console.log("isPrimeOptimized 1?", isPrimeOptimized(1));
+                    console.log("isPrimeOptimized 5?", isPrimeOptimized(5));
+                    console.log("isPrimeOptimized 4?", isPrimeOptimized(4));
+                </script> -->
+                <li>
+                    <h3>Time Complixity of our Code[of <b>solve-2</b>]</h3>
+                    <pre>
+    let's now determine the time complexity,
+        if <b>n</b> is equal to 100 we check till n is equal to 10.
+        if <b>n</b> is equal to 10,000 we check till 100.
+
+    so as the size of <b>n</b> increases the number of times the for loop statement executes increases but not in the same proportion
+
+    this optimize function has <b>O(sqrt(n))</b> time complexity
+</pre>
+                </li>
+
+            </ul>
+        </li>
+
+
+
+        <li>
+            <h2>JavaScript Algorithms - 10 - Power of Two</h2>
+            <ul>
+                <li>
+                    <h3>Problem ⇊ </h3>
+                    <code>
+                        given a positive integer <b>"n"</b> determine if the number is a power of 2 or not
+                    </code>
+                    <br><br><mark><b><i>[watch code in VS Code]</i> </b></mark>
+                    <details>
+                        <summary>Code Reveal solve 1</summary>
+                        <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668118504/JavaScript%20Algorithms_Codevolution/powerOF2_bbei57.png"
+                            alt="">
+                    </details>
+                    <script>
+                        // solve 1 
+                        function isPowerOf2(n) {
+                            if (n < 1) {
+                                return false
+                            }
+                            for (let i = 0; i < n; i++) {
+                                if (2 ** i === n) {
+                                    return true
+                                }
+                            }
+                            return false
+                        }
+
+                        console.log("isPowerOf2 2?", isPowerOf2(2));
+                        console.log("isPowerOf2 4?", isPowerOf2(4));
+                        console.log("isPowerOf2 9?", isPowerOf2(9));
+                    </script>
+                </li>
+                <li>
+                    <h3>Time Complixity of our Code[of <b>solve-1</b>]</h3>
+                    <pre>
+        Big o is <b>linear time complexity</b> so big o is equal to <b>O(n)</b> 
+        as the value of n increases the number of times line six executes also increases
+        
+    <strong>Big-O = O(n)</strong>
+    </pre>
+                </li>
+
+
+
+                <br><mark><b><i>[watch code in VS Code]</i> </b></mark>
+                <details>
+                    <summary>Code Reveal solve 2</summary>
+                    <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668118504/JavaScript%20Algorithms_Codevolution/powerOF2_2_esqjt1.png"
+                        alt="">
+                </details>
+                <script>
+                    // solve 2
+                    function isPowerOf2Optimized(n) {
+                        if (n < 1) {
+                            return false
+                        }
+                        while (n > 1) {
+                            if (n % 2 !== 0) {
+                                return false
+                            }
+                            n = n / 2
+                        }
+                        return true
+                    }
+
+                    console.log("isPowerOf2Optimized 2?", isPowerOf2Optimized(2));
+                    console.log("isPowerOf2Optimized 4?", isPowerOf2Optimized(4));
+                    console.log("isPowerOf2Optimized 9?", isPowerOf2Optimized(9));
+                </script>
+                <li>
+                    <h3>Time Complixity of our Code[of <b>solve-2</b>]</h3>
+                    <pre>
+    let's estimate the big-o together,
+        a function contains one while loop from our cheat sheet you may think that the big o is <b>linear time complexity</b>.
+        
+        however this is a while loop and you need to pay attention to how n is changed within the loop body <mark>in each iteration we are reducing the value of n by half</mark> if we take a look at our big o guide this satisfies the  statement
+
+        so the time complexity is actually <b>O(logn)</b> the number of instruction executions increases as n grows but not by the same amount so
+    <strong>Big-O = O(logn)</strong>
+</pre>
+                </li>
+
+
+
+                <br><mark><b><i>[watch code in VS Code]</i> </b></mark>
+                <details>
+                    <summary>Code Reveal solve 3</summary>
+                    <img src="https://res.cloudinary.com/dglsw3gml/image/upload/v1668118504/JavaScript%20Algorithms_Codevolution/powerOF2__scsrj6.png"
+                        alt="">
+                </details>
+                <script>
+                    // solve 3
+                    function isPowerOfTwoBitWise(n) {
+                        if (n < 1) {
+                            return false
+                        }
+                        return (n & (n - 1)) === 0
+                    }
+
+                    console.log("isPowerOfTwoBitWise 2?", isPowerOfTwoBitWise(2));
+                    console.log("isPowerOfTwoBitWise 16?", isPowerOfTwoBitWise(4));
+                    console.log("isPowerOfTwoBitWise 9?", isPowerOfTwoBitWise(9));
+                </script>
+                <li>
+                    <h3>Time Complixity of our Code[of <b>solve-3</b>]</h3>
+                    <pre>
+    Constant Time Complexity
+                        <strong>Big-O = O(1)</strong>
+</pre>
+                </li>
+
+
+
+            </ul>
+
+        </li>
+
+
 
     </ul>
 
